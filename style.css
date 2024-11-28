@@ -1,13 +1,13 @@
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding:0;
+    outline: 1px solid red;
 }
 
 body,html{
-    margin: 0;
-    padding:0;
     font-family: "Inter", sans-serif;
     height: 100%;
-    width: 100%;
     background-color: var(--black-color);
     color: var(--secondary-color);
     
@@ -21,7 +21,6 @@ body,html{
     --border-color:#1E1E21;
     --black-color: #151414;
     --plyr-color-main: var(--primary-color)
-    
 }
 
 h1{
@@ -162,6 +161,57 @@ button{
     width:100%;
     max-width: 90rem;  
     margin: 0 auto;
+    position: relative;
+    
+}
+
+nav{
+    width: 100%;
+    postion: fixed;
+     z-index: 12;
+     background-color:#15141439;
+     border-radius: 99px;
+     backdrop-filter: blur(5px);
+}
+
+.header-wrap{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 5rem;
+    gap: 2rem;
+}
+
+
+
+.header-nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header-wrap button{
+    width:auto;
+    min-width: 200px;
+}
+
+.header-nav-links{
+    width:auto;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    text-decoration: none;
+    color: var(--secondary-color);
+    gap: 2rem;
+}
+
+.header-nav-links a{
+    text-decoration: none;
+    color: var(--secondary-color);
 }
 
 .hero{   
@@ -223,7 +273,7 @@ background-color: var(--primary-color);
 }
 
 .black-btn{
-   padding: 1.25em 1.75em; 
+   padding: 1em 1.75em; 
    border-radius: 99px;
    color: var(--secondary-color);
    border: 1px solid var(--border-color);
@@ -451,6 +501,7 @@ background-clip: text;
 }
 
 .hvideo{
+    overflow-x: hidden;
     position: relative;
     background-image: url(/img/Line\ BG.png);
     background-repeat: no-repeat;
@@ -459,6 +510,7 @@ background-clip: text;
 }
 
 .hvideo .blur-circle{
+    display: none;
     
     left: 1500px;
     top: -215px;
@@ -621,12 +673,18 @@ align-items: center;
     justify-self: center;
   }
 
+
+
 .htestimonials{
     padding: 1rem 5rem;
     margin-bottom: 4rem;  
 }
 
-
+.ht-wrap{
+display:flex;
+flex-direction: column;
+gap: 2rem;
+}
 .htestimonials-list{
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -660,6 +718,7 @@ align-items: center;
     padding: 2rem 2rem;
     border-bottom: 1px solid var(--border-color);
 }
+
 .ht-card-review{
     display: flex;
 }
@@ -678,4 +737,62 @@ align-items: center;
     border-radius: 99px;
     object-fit: cover;
   }
+
+  
+
+  .home-cta{
+    padding: 1rem 5rem;
+    margin-bottom: 4rem;  
+  }
+
+  .hcta-wrap{
+    border: 1px solid var(--primary-color);
+    border-radius: 30px;
+    padding: 1.5rem;
+  }
+
+  .hcta-content{
+    background-color: var(--border-color);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 6.25rem 5rem;
+  }
+
+  .hcta-content h1{
+    width: 60%;
+    text-align: center;
+    background: linear-gradient(90deg, #FFFFFF 0%, #767585 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+  }
+
+  .hcta-content body-2{
+    width: 60%;
+    text-align: center;
+  }
+
+.green-btn{
+    padding: 1em 1.75em; 
+    border-radius: 99px;
+    color: var(--secondary-color);
+    border: 1px solid var(--border-color);
+    background-color: var(--primary-color);
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 300ms ease;
+  }
+
+  .green-btn:hover{
+    padding: 1em 1.75em; 
+    border-radius: 99px;
+    color: var(--black-color);
+    border: 1px solid var(--border-color);
+    background-color: var(--secondary-color);
+    transform: scale(1.1);
+  }  
 

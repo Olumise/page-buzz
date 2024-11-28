@@ -9,12 +9,29 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
     <link rel="stylesheet" href="/style.css" />
     <title>Document</title>
   </head>
   <body>
     <div class="wrapper">
+      <nav class="header-nav">
+        <div class="header-wrap">
+          <div class="nav-img-wrap">
+            <img class="nav-img" src="/img/logo.svg" alt="" />
+          </div>
+          <ul class="header-nav-links">
+            <a href="#"><li>HOME</li></a>
+            <a href="#"><li>ABOUT</li></a>
+            <a href="#"><li>SERVICES</li></a>
+            <a href="#"><li>CONTACT</li></a>
+          </ul>
+        </div>
+        <button class="black-btn">EMAIL US</button>
+      </nav>
+
       <section class="hero">
         <div class="blur-circle"></div>
         <div class="hero-content">
@@ -343,6 +360,51 @@
                 />
               </div>
             </div>
+
+            <div class="ht-card">
+              <div class="ht-card-top">
+                <img src="/img/fa_quote-left.svg" alt="" />
+                <div class="ht-card-review">
+                  <img src="/img/review star.svg" alt="" />
+                  <p class="body-1">(4.8/5)</p>
+                </div>
+              </div>
+              <h5>
+                "PageBuzz transformed our online store into a sleek,
+                user-friendly platform. Our sales skyrocketed by 35% in just
+                three months! Their team is professional, creative, and
+                incredibly responsive."
+              </h5>
+              <div class="ht-card-bottom">
+                <div class="ht-card-name">
+                  <h6>Willie Gibson</h6>
+                  <p class="body-2">CEO of Buzz</p>
+                </div>
+                <img
+                  class="ht-card-img"
+                  src="https://media.istockphoto.com/id/505653911/pt/foto/ele-o-homem-moderno.jpg?s=2048x2048&w=is&k=20&c=mOb3F3Bh8bQ3CpHfMc7oJm7q7mj4mdxVdHeDSp_SQPA="
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="home-cta">
+        <div class="hcta-wrap">
+          <div class="hcta-content">
+            <div class="hero-pill-wrap">
+              <div class="pill"></div>
+              <p class="sub-title">Why Choose Us</p>
+              <div class="pill"></div>
+            </div>
+            <h1>Interested in Working Together?</h1>
+            <p class="body-2">
+              Ready to elevate your brand? Let’s create something extraordinary
+              together – contact PageBuzz today!
+            </p>
+            <button class="green-btn">SCHEDULE A CALL</button>
           </div>
         </div>
       </section>
